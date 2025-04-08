@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="200" height="240" viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background emblem -->
+  <rect x="10" y="10" width="180" height="180" rx="15" ry="15" fill="white" stroke="#4F46E5" stroke-width="2"/>
+
+  <!-- Stylized lotus flower -->
+  <g id="lotus" transform="translate(100,100) scale(0.85)">
+    <!-- Outer petals -->
+    <path d="M0,-70 C20,-60 30,-40 20,-20 C10,0 -10,0 -20,-20 C-30,-40 -20,-60 0,-70"
+          fill="#4F46E5" opacity="0.9" transform="rotate(0)"/>
+    <path d="M0,-70 C20,-60 30,-40 20,-20 C10,0 -10,0 -20,-20 C-30,-40 -20,-60 0,-70"
+          fill="#4F46E5" opacity="0.8" transform="rotate(40)"/>
+    <path d="M0,-70 C20,-60 30,-40 20,-20 C10,0 -10,0 -20,-20 C-30,-40 -20,-60 0,-70"
+          fill="#4F46E5" opacity="0.9" transform="rotate(80)"/>
+    <path d="M0,-70 C20,-60 30,-40 20,-20 C10,0 -10,0 -20,-20 C-30,-40 -20,-60 0,-70"
+          fill="#4F46E5" opacity="0.8" transform="rotate(120)"/>
+    <path d="M0,-70 C20,-60 30,-40 20,-20 C10,0 -10,0 -20,-20 C-30,-40 -20,-60 0,-70"
+          fill="#4F46E5" opacity="0.9" transform="rotate(160)"/>
+    <path d="M0,-70 C20,-60 30,-40 20,-20 C10,0 -10,0 -20,-20 C-30,-40 -20,-60 0,-70"
+          fill="#4F46E5" opacity="0.8" transform="rotate(200)"/>
+    <path d="M0,-70 C20,-60 30,-40 20,-20 C10,0 -10,0 -20,-20 C-30,-40 -20,-60 0,-70"
+          fill="#4F46E5" opacity="0.9" transform="rotate(240)"/>
+    <path d="M0,-70 C20,-60 30,-40 20,-20 C10,0 -10,0 -20,-20 C-30,-40 -20,-60 0,-70"
+          fill="#4F46E5" opacity="0.8" transform="rotate(280)"/>
+    <path d="M0,-70 C20,-60 30,-40 20,-20 C10,0 -10,0 -20,-20 C-30,-40 -20,-60 0,-70"
+          fill="#4F46E5" opacity="0.9" transform="rotate(320)"/>
+
+    <!-- Inner petals -->
+    <path d="M0,-45 C15,-40 20,-25 15,-15 C10,0 -10,0 -15,-15 C-20,-25 -15,-40 0,-45"
+          fill="#10B981" opacity="0.9" transform="rotate(20)"/>
+    <path d="M0,-45 C15,-40 20,-25 15,-15 C10,0 -10,0 -15,-15 C-20,-25 -15,-40 0,-45"
+          fill="#10B981" opacity="0.9" transform="rotate(100)"/>
+    <path d="M0,-45 C15,-40 20,-25 15,-15 C10,0 -10,0 -15,-15 C-20,-25 -15,-40 0,-45"
+          fill="#10B981" opacity="0.9" transform="rotate(180)"/>
+    <path d="M0,-45 C15,-40 20,-25 15,-15 C10,0 -10,0 -15,-15 C-20,-25 -15,-40 0,-45"
+          fill="#10B981" opacity="0.9" transform="rotate(260)"/>
+
+    <!-- Center of lotus -->
+    <circle cx="0" cy="0" r="15" fill="#4F46E5"/>
+    <circle cx="0" cy="0" r="8" fill="#10B981"/>
+  </g>
+
+  <!-- Traditional border pattern -->
+  <g id="border-pattern">
+    <!-- Top border -->
+    <path d="M25,25 Q30,15 35,25 Q40,35 45,25 Q50,15 55,25 Q60,35 65,25
+             Q70,15 75,25 Q80,35 85,25 Q90,15 95,25 Q100,35 105,25
+             Q110,15 115,25 Q120,35 125,25 Q130,15 135,25 Q140,35 145,25
+             Q150,15 155,25 Q160,35 165,25 Q170,15 175,25"
+          fill="none" stroke="#4F46E5" stroke-width="2"/>
+
+    <!-- Bottom border -->
+    <path d="M25,175 Q30,185 35,175 Q40,165 45,175 Q50,185 55,175 Q60,165 65,175
+             Q70,185 75,175 Q80,165 85,175 Q90,185 95,175 Q100,165 105,175
+             Q110,185 115,175 Q120,165 125,175 Q130,185 135,175 Q140,165 145,175
+             Q150,185 155,175 Q160,165 165,175 Q170,185 175,175"
+          fill="none" stroke="#4F46E5" stroke-width="2"/>
+  </g>
+
+  <!-- Club name text -->
+  <text x="100" y="215" font-family="'Playfair Display', serif" font-size="16" fill="#1F2937" text-anchor="middle">TANGURIA</text>
+  <text x="100" y="235" font-family="'Playfair Display', serif" font-size="14" fill="#1F2937" text-anchor="middle">RECREATION CLUB</text>
+</svg>

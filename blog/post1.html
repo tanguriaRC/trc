@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultural Event Draws Record Attendance - Tanguria Recreation Club</title>
+    <meta name="description" content="Our annual cultural program brought together over 500 community members for an evening of traditional dance, music, and celebration.">
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="alternate icon" href="../assets/images/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon" href="../assets/images/favicon-32x32.png">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        /* Enhanced styles for blog post single page */
+        .blog-post-single {
+            padding: 2rem 0 4rem;
+        }
+
+        .post-header {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .post-meta {
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .post-title {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .post-author {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+
+        .post-author img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+
+        .author-info {
+            text-align: left;
+        }
+
+        .author-name {
+            display: block;
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--heading-color, #333);
+        }
+
+        .author-role {
+            display: block;
+            font-size: 0.9rem;
+            color: var(--text-muted, #6c757d);
+        }
+
+        .featured-image {
+            margin-bottom: 2rem;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .featured-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .post-content {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            color: var(--text-color, #333);
+        }
+
+        .post-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .post-content h2 {
+            margin-top: 2.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            color: var(--heading-color, #222);
+            font-family: 'Playfair Display', serif;
+        }
+
+        .post-content ul, .post-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+        .post-content li {
+            margin-bottom: 0.75rem;
+        }
+
+        .post-content blockquote {
+            border-left: 4px solid var(--primary-color, #3498db);
+            padding: 1rem 0 1rem 2rem;
+            margin: 2rem 0;
+            font-style: italic;
+            background-color: var(--blockquote-bg, rgba(52, 152, 219, 0.05));
+            border-radius: 0 8px 8px 0;
+        }
+
+        .post-content blockquote p {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--blockquote-color, #2c3e50);
+        }
+
+        .post-content blockquote cite {
+            font-size: 0.9rem;
+            font-style: normal;
+            color: var(--text-muted, #6c757d);
+            font-weight: 600;
+        }
+
+        .post-tags {
+            margin-top: 3rem;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .post-tags span {
+            margin-right: 1rem;
+            font-weight: 600;
+        }
+
+        .post-tags ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .post-tags li {
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .post-tags a {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            background-color: var(--tag-bg, #f0f0f0);
+            color: var(--text-color, #555);
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .post-tags a:hover {
+            background-color: var(--primary-color, #3498db);
+            color: white;
+        }
+
+        .post-navigation {
+            display: flex;
+            justify-content: space-between;
+            max-width: 800px;
+            margin: 3rem auto 0;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color, #e1e1e1);
+        }
+
+        .nav-previous, .nav-next {
+            max-width: 48%;
+        }
+
+        .nav-previous a, .nav-next a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: var(--text-color, #333);
+            transition: color 0.3s ease;
+        }
+
+        .nav-previous a:hover, .nav-next a:hover {
+            color: var(--primary-color, #3498db);
+        }
+
+        .nav-previous svg, .nav-next svg {
+            flex-shrink: 0;
+            width: 20px;
+            height: 20px;
+        }
+
+        .nav-previous svg {
+            margin-right: 10px;
+        }
+
+        .nav-next svg {
+            margin-left: 10px;
+        }
+
+        .nav-title {
+            font-weight: 600;
+        }
+
+        .nav-next {
+            text-align: right;
+        }
+
+        .nav-next a {
+            justify-content: flex-end;
+        }
+
+        @media (max-width: 768px) {
+            .post-title {
+                font-size: 2rem;
+            }
+
+            .post-content {
+                font-size: 1rem;
+            }
+
+            .post-content blockquote p {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../assets/images/logo.svg" alt="Tanguria Recreation Club Logo" width="80" height="80">
+                        <h1>Tanguria Recreation Club</h1>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <button class="menu-toggle" aria-expanded="false" aria-controls="primary-menu">
+                        <span class="hamburger"></span>
+                        <span class="sr-only">Menu</span>
+                    </button>
+                    <ul id="primary-menu" class="menu">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li class="active"><a href="../blog.html">Blog</a></li>
+                        <li><a href="../donation.html">Donation</a></li>
+                        <li><a href="../about.html">About</a></li>
+                    </ul>
+                </nav>
+                <div class="header-controls">
+                    <button class="theme-toggle" aria-label="Toggle dark mode">
+                        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                    <div class="language-selector">
+                        <button class="current-lang">English</button>
+                        <ul class="lang-dropdown">
+                            <li><button data-lang="en" class="active">English</button></li>
+                            <li><button data-lang="bn">Bengali</button></li>
+                            <li><button data-lang="hi">Hindi</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <article class="blog-post-single">
+            <div class="container">
+                <div class="post-header">
+                    <div class="post-meta">
+                        <span class="post-date">May 10, 2023</span>
+                        <span class="post-category">Cultural Events</span>
+                    </div>
+                    <h1 class="post-title">Cultural Event Draws Record Attendance</h1>
+                    <div class="post-author">
+                        <img src="../assets/images/team/team1.jpg" alt="Rajesh Kumar">
+                        <div class="author-info">
+                            <span class="author-name">Rajesh Kumar</span>
+                            <span class="author-role">Cultural Secretary</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-image">
+                    <img src="../assets/images/blog/post1.jpg" alt="Cultural Event Success">
+                </div>
+
+                <div class="post-content">
+                    <p>Our annual cultural program, held last weekend at the Community Center, brought together over 500 community members for an evening of traditional dance, music, and celebration. The event showcased performances from artists of all ages representing various cultural traditions.</p>
+
+                    <p>The program began with a traditional lamp lighting ceremony performed by our club president, Mrs. Anjali Sharma, followed by a welcome address that highlighted the importance of preserving our cultural heritage while embracing diversity.</p>
+
+                    <h2>Spectacular Performances</h2>
+
+                    <p>The evening featured a diverse range of performances that captivated the audience:</p>
+
+                    <ul>
+                        <li><strong>Classical Dance:</strong> The program opened with a mesmerizing Bharatanatyam performance by the talented students of Nritya Academy. Their synchronization and expressions brought ancient stories to life on stage.</li>
+
+                        <li><strong>Folk Music:</strong> The Tanguria Folk Ensemble presented traditional folk songs from different regions, using authentic instruments that transported the audience to rural villages and their rich musical heritage.</li>
+
+                        <li><strong>Children's Performance:</strong> One of the highlights was the children's dance drama depicting the story of environmental conservation. Their enthusiasm and message received a standing ovation.</li>
+
+                        <li><strong>Modern Fusion:</strong> Young performers presented a fusion of classical and contemporary dance forms, symbolizing the harmonious blend of tradition and modernity.</li>
+                    </ul>
+
+                    <blockquote>
+                        <p>"This was the most well-attended cultural event in our club's history. The quality of performances and the diversity of art forms presented truly exemplified our community's rich cultural tapestry."</p>
+                        <cite>— Anjali Sharma, Club President</cite>
+                    </blockquote>
+
+                    <h2>Community Engagement</h2>
+
+                    <p>Beyond the performances, the event featured an exhibition of traditional arts and crafts created by community members. Visitors had the opportunity to learn about various art forms, try their hand at traditional crafts, and purchase unique handmade items, with proceeds supporting local artisans.</p>
+
+                    <p>The food court offered a delicious array of traditional cuisines prepared by community volunteers. From Bengali sweets to Punjabi specialties, the culinary diversity reflected our community's varied cultural backgrounds.</p>
+
+                    <h2>Looking Ahead</h2>
+
+                    <p>Given the overwhelming success of this year's event, the organizing committee has already begun planning for next year's cultural program. There are discussions about expanding the event to a two-day format to accommodate more performances and cultural workshops.</p>
+
+                    <p>"We're considering adding interactive workshops before the main performances, where community members can learn basic classical dance movements, folk music, or traditional art techniques," explained Priya Malhotra, event coordinator.</p>
+
+                    <p>The club would like to thank all the performers, volunteers, sponsors, and attendees who made this event a tremendous success. Special thanks to the Community Center for providing the venue and to local businesses for their generous sponsorship.</p>
+
+                    <p>If you missed this year's cultural program, check out the photo gallery on our website and mark your calendars for next year's event, tentatively scheduled for early May 2024.</p>
+                </div>
+
+                <div class="post-tags">
+                    <span>Tags:</span>
+                    <ul>
+                        <li><a href="#">Cultural</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Dance</a></li>
+                        <li><a href="#">Music</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+
+                <div class="post-navigation">
+                    <div class="nav-previous">
+                        <a href="post3.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="19" y1="12" x2="5" y2="12"></line>
+                                <polyline points="12 19 5 12 12 5"></polyline>
+                            </svg>
+                            <span class="nav-title">Previous Post</span>
+                        </a>
+                    </div>
+                    <div class="nav-next">
+                        <a href="post2.html">
+                            <span class="nav-title">Next Post</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="share-post">
+                    <h3>Share This Post</h3>
+                    <div class="social-share">
+                        <a href="#" aria-label="Share on Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Share on Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Share on WhatsApp">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Share by Email">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <section class="related-posts">
+            <div class="container">
+                <h3>Related Posts</h3>
+                <div class="posts-grid">
+                    <div class="post-card">
+                        <div class="post-image">
+                            <img src="../assets/images/blog/post2.jpg" alt="Donation Drive">
+                        </div>
+                        <div class="post-details">
+                            <h4>Successful Donation Drive for Local School</h4>
+                            <p class="post-date">April 25, 2023</p>
+                            <p class="post-excerpt">Thanks to our generous community, we were able to provide educational materials to over 200 students.</p>
+                            <a href="post2.html" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                    <div class="post-card">
+                        <div class="post-image">
+                            <img src="../assets/images/blog/post3.jpg" alt="New Members Welcome">
+                        </div>
+                        <div class="post-details">
+                            <h4>Welcome to Our New Members</h4>
+                            <p class="post-date">April 12, 2023</p>
+                            <p class="post-excerpt">We're excited to welcome 25 new families to our club this month. Join us for our upcoming new member orientation.</p>
+                            <a href="post3.html" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Tanguria Recreation Club</h3>
+                    <p>A non-profit organization dedicated to enriching our community through cultural events, charitable activities, and social gatherings.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../donation.html">Donation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <address>
+                        <p>VILL-TANGURIA, P.O-BIBHISHANPUR, P.S-BHAGWANPUR</p>
+                        <p>DIST-PURBA MEDINIPUR, WEST BENGAL, INDIA, PIN-721458</p>
+                        <p>Email: <a href="mailto:tanguriarecreationclub@gmail.com">tanguriarecreationclub@gmail.com</a></p>
+                        <p>Phone: <a href="tel:+919876543210">+91 9876543210</a></p>
+                    </address>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path>
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Tanguria Recreation Club. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/darkMode.js"></script>
+    <script src="../assets/js/language.js"></script>
+    <script src="../assets/js/notifications.js"></script>
+</body>
+</html>

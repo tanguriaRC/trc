@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Tanguria Recreation Club</title>
+    <meta name="description" content="View photos from our cultural events, donation drives, pujas, and community activities.">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="alternate icon" href="assets/images/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/images/favicon-32x32.png">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.svg" alt="Tanguria Recreation Club Logo" width="80" height="80">
+                        <h1>Tanguria Recreation Club</h1>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <button class="menu-toggle" aria-expanded="false" aria-controls="primary-menu">
+                        <span class="hamburger"></span>
+                        <span class="sr-only">Menu</span>
+                    </button>
+                    <ul id="primary-menu" class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="gallery.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="donation.html">Donation</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+                <div class="header-controls">
+                    <button class="theme-toggle" aria-label="Toggle dark mode">
+                        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                    <div class="language-selector">
+                        <button class="current-lang">English</button>
+                        <ul class="lang-dropdown">
+                            <li><button data-lang="en" class="active">English</button></li>
+                            <li><button data-lang="bn">Bengali</button></li>
+                            <li><button data-lang="hi">Hindi</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <div class="container">
+                <h1>Our Gallery</h1>
+                <p>Explore the moments we've captured and memories we've created together.</p>
+            </div>
+        </div>
+
+        <section class="gallery-filters">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="family">Family Events</button>
+                    <button class="filter-btn" data-filter="cultural">Cultural Programs</button>
+                    <button class="filter-btn" data-filter="donation">Donation Drives</button>
+                    <button class="filter-btn" data-filter="puja">Puja Celebrations</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Family Events Section -->
+        <section class="gallery-section family-section" id="family">
+            <div class="container">
+                <div class="section-intro">
+                    <h2>Family Sessions</h2>
+                    <p class="placeholder-text">I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click "Edit Text" or double-click me to add your own content and make changes to the font.</p>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery/family-1.jpg" alt="Family gathering at cultural event">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery/family-2.jpg" alt="Children playing at community event">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery/family-3.jpg" alt="Family celebration">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery/family-4.jpg" alt="Family portrait at club event">
+                    </div>
+                </div>
+
+                <div class="view-album">
+                    <a href="#" class="btn btn-primary">View Album</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cultural Programs Section -->
+        <section class="gallery-section maternity-section" id="cultural">
+            <div class="container">
+                <div class="section-intro">
+                    <h2>Maternity Session</h2>
+                    <p class="placeholder-text">I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click "Edit Text" or double-click me to add your own content and make changes to the font.</p>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery/maternity-1.jpg" alt="Dance performance at cultural event">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery/maternity-2.jpg" alt="Music concert at cultural night">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery/maternity-3.jpg" alt="Traditional art presentation">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery/maternity-4.jpg" alt="Cultural dress showcase">
+                    </div>
+                </div>
+
+                <div class="view-album">
+                    <a href="#" class="btn btn-primary">View Album</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Donation Drives Section -->
+        <section class="gallery-section newborn-section" id="donation">
+            <div class="container">
+                <div class="section-intro">
+                    <h2>Newborn Session</h2>
+                    <p class="placeholder-text">I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click "Edit Text" or double-click me to add your own content and make changes to the font.</p>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery/newborn-1.jpg" alt="Community donation drive">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery/newborn-2.jpg" alt="School supplies donation">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery/newborn-3.jpg" alt="Food donation drive">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery/newborn-4.jpg" alt="Volunteer group at donation event">
+                    </div>
+                </div>
+
+                <div class="view-album">
+                    <a href="#" class="btn btn-primary">View Album</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Puja Celebrations Section -->
+        <section class="gallery-section puja-section" id="puja">
+            <div class="container">
+                <div class="section-intro">
+                    <h2>Puja Celebrations</h2>
+                    <p>Celebrating our cultural and religious traditions together as a community.</p>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery/puja-1.jpg" alt="Durga Puja celebration">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery/puja-2.jpg" alt="Saraswati Puja event">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery/puja-3.jpg" alt="Kali Puja celebration">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery/puja-4.jpg" alt="Community gathering at Puja">
+                    </div>
+                </div>
+
+                <div class="view-album">
+                    <a href="#" class="btn btn-primary">View Album</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox Container -->
+        <div class="lightbox" id="lightbox">
+            <div class="lightbox-container">
+                <div class="lightbox-content">
+                    <img src="" alt="" id="lightbox-image">
+                    <div class="lightbox-caption"></div>
+                </div>
+                <button class="lightbox-prev">&lt;</button>
+                <button class="lightbox-next">&gt;</button>
+                <button class="lightbox-close">&times;</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Tanguria Recreation Club</h3>
+                    <p>A non-profit organization dedicated to enriching our community through cultural events, charitable activities, and social gatherings.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="donation.html">Donation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <address>
+                        <p>VILL-TANGURIA, P.O-BIBHISHANPUR, P.S-BHAGWANPUR</p>
+                        <p>DIST-PURBA MEDINIPUR, WEST BENGAL, INDIA, PIN-721458</p>
+                        <p>Email: <a href="mailto:tanguriarecreationclub@gmail.com">tanguriarecreationclub@gmail.com</a></p>
+                        <p>Phone: <a href="tel:+919876543210">+91 9876543210</a></p>
+                    </address>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path>
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Tanguria Recreation Club. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/gallery.js"></script>
+    <script src="assets/js/darkMode.js"></script>
+    <script src="assets/js/language.js"></script>
+    <script src="assets/js/notifications.js"></script>
+</body>
+</html>

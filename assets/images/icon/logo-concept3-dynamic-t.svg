@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="220" height="220" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient for flowing effect -->
+    <linearGradient id="flow-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="50%" stop-color="#0EA5E9"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+
+    <!-- Filter for glow effect -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="110" cy="110" r="100" fill="white" stroke="#4F46E5" stroke-width="2"/>
+
+  <!-- Dynamic "T" with flowing lines -->
+  <g id="dynamic-t" transform="translate(110,110)">
+    <!-- Main T shape with gradient fill -->
+    <path d="M-60,-50 L60,-50 Q65,-50 65,-45 L65,-30 Q65,-25 60,-25 L20,-25 L20,60 Q20,65 15,65
+             L-15,65 Q-20,65 -20,60 L-20,-25 L-60,-25 Q-65,-25 -65,-30 L-65,-45 Q-65,-50 -60,-50 Z"
+          fill="url(#flow-gradient)"/>
+
+    <!-- Flowing lines around the T -->
+    <path d="M-70,-60 Q-60,-70 -50,-60 Q-30,-20 -50,40 Q-55,60 -40,70 Q-20,80 0,70 Q20,60 40,70 Q60,80 70,60 Q80,40 70,20 Q60,0 70,-20 Q80,-40 70,-60 Q40,-80 0,-70 Q-40,-80 -70,-60 Z"
+          fill="none" stroke="url(#flow-gradient)" stroke-width="3" opacity="0.3" filter="url(#glow)"/>
+
+    <!-- Small flowing line embellishments -->
+    <path d="M-40,-30 Q-20,-50 0,-30 Q20,-10 40,-30"
+          fill="none" stroke="#10B981" stroke-width="2" opacity="0.8"/>
+    <path d="M-40,20 Q-20,0 0,20 Q20,40 40,20"
+          fill="none" stroke="#4F46E5" stroke-width="2" opacity="0.8"/>
+    <path d="M-30,50 Q0,30 30,50"
+          fill="none" stroke="#0EA5E9" stroke-width="2" opacity="0.8"/>
+  </g>
+
+  <!-- Club name text -->
+  <text x="110" y="180" font-family="'Playfair Display', serif" font-size="10" fill="#1F2937" text-anchor="middle" letter-spacing="1">TANGURIA RECREATION CLUB</text>
+</svg>

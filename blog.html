@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Tanguria Recreation Club</title>
+    <meta name="description" content="Stay updated with the latest news, events, and stories from Tanguria Recreation Club.">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="alternate icon" href="assets/images/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/images/favicon-32x32.png">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.svg" alt="Tanguria Recreation Club Logo" width="80" height="80">
+                        <h1>Tanguria Recreation Club</h1>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <button class="menu-toggle" aria-expanded="false" aria-controls="primary-menu">
+                        <span class="hamburger"></span>
+                        <span class="sr-only">Menu</span>
+                    </button>
+                    <ul id="primary-menu" class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="donation.html">Donation</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+                <div class="header-controls">
+                    <button class="theme-toggle" aria-label="Toggle dark mode">
+                        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                    <div class="language-selector">
+                        <button class="current-lang">English</button>
+                        <ul class="lang-dropdown">
+                            <li><button data-lang="en" class="active">English</button></li>
+                            <li><button data-lang="bn">Bengali</button></li>
+                            <li><button data-lang="hi">Hindi</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <div class="container">
+                <h1>Our Blog</h1>
+                <p>Updates, news, and stories from our community and events.</p>
+            </div>
+        </div>
+
+        <section class="blog-content">
+            <div class="container">
+                <div class="blog-layout">
+                    <div class="blog-main">
+                        <!-- Blog search bar -->
+                        <div class="blog-search">
+                            <form class="search-form">
+                                <input type="text" placeholder="Search blog posts..." aria-label="Search blog posts">
+                                <button type="submit" aria-label="Submit search">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+
+                        <div class="blog-listings">
+                            <!-- Blog Post 1 -->
+                            <article class="blog-post">
+                                <div class="post-image">
+                                    <span class="post-date-badge">May 10, 2023</span>
+                                    <img src="assets/images/blog/post1.jpg" alt="Cultural Event Success">
+                                </div>
+                                <div class="post-content">
+                                    <div class="post-meta">
+                                        <span class="post-category">Cultural Events</span>
+                                        <span class="post-author">By Rahul Sharma</span>
+                                    </div>
+                                    <h2 class="post-title"><a href="blog/post1.html">Cultural Event Draws Record Attendance</a></h2>
+                                    <div class="post-excerpt">
+                                        <p>Our annual cultural program brought together over 500 community members for an evening of traditional dance, music, and celebration. The event showcased performances from artists of all ages representing various cultural traditions.</p>
+                                    </div>
+                                    <div class="post-footer">
+                                        <a href="blog/post1.html" class="read-more">Read More <span class="arrow">→</span></a>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Blog Post 2 -->
+                            <article class="blog-post">
+                                <div class="post-image">
+                                    <span class="post-date-badge">April 25, 2023</span>
+                                    <img src="assets/images/blog/post2.jpg" alt="Donation Drive">
+                                </div>
+                                <div class="post-content">
+                                    <div class="post-meta">
+                                        <span class="post-category">Charity</span>
+                                        <span class="post-author">By Priya Patel</span>
+                                    </div>
+                                    <h2 class="post-title"><a href="blog/post2.html">Successful Donation Drive for Local School</a></h2>
+                                    <div class="post-excerpt">
+                                        <p>Thanks to our generous community, we were able to provide educational materials to over 200 students at the local elementary school. The donation drive collected textbooks, notebooks, stationery items, and backpacks for children in need.</p>
+                                    </div>
+                                    <div class="post-footer">
+                                        <a href="blog/post2.html" class="read-more">Read More <span class="arrow">→</span></a>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Blog Post 3 -->
+                            <article class="blog-post">
+                                <div class="post-image">
+                                    <span class="post-date-badge">April 12, 2023</span>
+                                    <img src="assets/images/blog/post3.jpg" alt="New Members Welcome">
+                                </div>
+                                <div class="post-content">
+                                    <div class="post-meta">
+                                        <span class="post-category">Community</span>
+                                        <span class="post-author">By Amit Kumar</span>
+                                    </div>
+                                    <h2 class="post-title"><a href="blog/post3.html">Welcome to Our New Members</a></h2>
+                                    <div class="post-excerpt">
+                                        <p>We're excited to welcome 25 new families to our club this month. Join us for our upcoming new member orientation where you'll meet the team, learn about our activities, and connect with other members of the community.</p>
+                                    </div>
+                                    <div class="post-footer">
+                                        <a href="blog/post3.html" class="read-more">Read More <span class="arrow">→</span></a>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Blog Post 4 -->
+                            <article class="blog-post">
+                                <div class="post-image">
+                                    <span class="post-date-badge">March 30, 2023</span>
+                                    <img src="assets/images/blog/post4.jpg" alt="Summer Festival Planning">
+                                </div>
+                                <div class="post-content">
+                                    <div class="post-meta">
+                                        <span class="post-category">Events</span>
+                                        <span class="post-author">By Neha Singh</span>
+                                    </div>
+                                    <h2 class="post-title"><a href="blog/post4.html">Summer Festival Planning Underway</a></h2>
+                                    <div class="post-excerpt">
+                                        <p>Preparations for our annual Summer Festival have begun! This year's festival will feature live performances, food stalls representing various cuisines, games for children, and a special arts and crafts exhibition by local artisans.</p>
+                                    </div>
+                                    <div class="post-footer">
+                                        <a href="blog/post4.html" class="read-more">Read More <span class="arrow">→</span></a>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Blog Post 5 -->
+                            <article class="blog-post">
+                                <div class="post-image">
+                                    <span class="post-date-badge">March 15, 2023</span>
+                                    <img src="assets/images/blog/post5.jpg" alt="Photography Workshop">
+                                </div>
+                                <div class="post-content">
+                                    <div class="post-meta">
+                                        <span class="post-category">Workshops</span>
+                                        <span class="post-author">By Vikram Desai</span>
+                                    </div>
+                                    <h2 class="post-title"><a href="blog/post5.html">Photography Workshop a Huge Success</a></h2>
+                                    <div class="post-excerpt">
+                                        <p>Our first photography workshop was a great success with over 30 participants learning techniques for portrait and event photography. The workshop was led by professional photographer Rahul Sharma who shared valuable insights on composition and lighting.</p>
+                                    </div>
+                                    <div class="post-footer">
+                                        <a href="blog/post5.html" class="read-more">Read More <span class="arrow">→</span></a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Pagination -->
+                        <div class="pagination">
+                            <span class="page-number current">1</span>
+                            <a href="#" class="page-number">2</a>
+                            <a href="#" class="page-number">3</a>
+                            <span class="page-dots">...</span>
+                            <a href="#" class="page-number">7</a>
+                            <a href="#" class="page-next">Next →</a>
+                        </div>
+                    </div>
+
+                    <!-- Blog Sidebar -->
+                    <aside class="blog-sidebar">
+                        <!-- Recent Posts Widget -->
+                        <div class="sidebar-widget recent-posts-widget">
+                            <h3 class="widget-title">Recent Posts</h3>
+                            <ul class="recent-posts-list">
+                                <li>
+                                    <a href="blog/post1.html" class="recent-post">
+                                        <div class="recent-post-image">
+                                            <img src="assets/images/blog/post1.jpg" alt="Cultural Event Success">
+                                        </div>
+                                        <div class="recent-post-info">
+                                            <h4>Cultural Event Draws Record Attendance</h4>
+                                            <div class="recent-post-meta">
+                                                <span class="recent-post-date">May 10, 2023</span>
+                                                <span class="recent-post-author">Rahul Sharma</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="blog/post2.html" class="recent-post">
+                                        <div class="recent-post-image">
+                                            <img src="assets/images/blog/post2.jpg" alt="Donation Drive">
+                                        </div>
+                                        <div class="recent-post-info">
+                                            <h4>Successful Donation Drive for Local School</h4>
+                                            <div class="recent-post-meta">
+                                                <span class="recent-post-date">April 25, 2023</span>
+                                                <span class="recent-post-author">Priya Patel</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="blog/post3.html" class="recent-post">
+                                        <div class="recent-post-image">
+                                            <img src="assets/images/blog/post3.jpg" alt="New Members Welcome">
+                                        </div>
+                                        <div class="recent-post-info">
+                                            <h4>Welcome to Our New Members</h4>
+                                            <div class="recent-post-meta">
+                                                <span class="recent-post-date">April 12, 2023</span>
+                                                <span class="recent-post-author">Amit Kumar</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Tags Widget -->
+                        <div class="sidebar-widget tags-widget">
+                            <h3 class="widget-title">Popular Tags</h3>
+                            <div class="tags-cloud">
+                                <a href="#" class="tag">Culture</a>
+                                <a href="#" class="tag">Charity</a>
+                                <a href="#" class="tag">Events</a>
+                                <a href="#" class="tag">Community</a>
+                                <a href="#" class="tag">Workshops</a>
+                                <a href="#" class="tag">Festival</a>
+                                <a href="#" class="tag">Education</a>
+                                <a href="#" class="tag">Donation</a>
+                                <a href="#" class="tag">Volunteer</a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Tanguria Recreation Club</h3>
+                    <p>A non-profit organization dedicated to enriching our community through cultural events, charitable activities, and social gatherings.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="donation.html">Donation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <address>
+                        <p>VILL-TANGURIA, P.O-BIBHISHANPUR, P.S-BHAGWANPUR</p>
+                        <p>DIST-PURBA MEDINIPUR, WEST BENGAL, INDIA, PIN-721458</p>
+                        <p>Email: <a href="mailto:tanguriarecreationclub@gmail.com">tanguriarecreationclub@gmail.com</a></p>
+                        <p>Phone: <a href="tel:+919876543210">+91 9876543210</a></p>
+                    </address>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path>
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Tanguria Recreation Club. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/darkMode.js"></script>
+    <script src="assets/js/language.js"></script>
+    <script src="assets/js/notifications.js"></script>
+</body>
+</html>
